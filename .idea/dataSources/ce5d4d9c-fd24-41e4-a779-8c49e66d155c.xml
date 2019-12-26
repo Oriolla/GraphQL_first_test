@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="graphql_app_development@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
+    <root id="1">
+      <ServerVersion>9.5.20</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="FirstProject_development">
+      <ObjectId>24612</ObjectId>
+      <StateNumber>1000</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="3" parent="1" name="firstproject_development">
+      <ObjectId>24613</ObjectId>
+      <StateNumber>1005</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="4" parent="1" name="firstproject_production">
+      <ObjectId>24615</ObjectId>
+      <StateNumber>1014</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="5" parent="1" name="firstproject_test">
+      <ObjectId>24614</ObjectId>
+      <StateNumber>1010</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="6" parent="1" name="graphql_app_development">
+      <ObjectId>24752</ObjectId>
+      <StateNumber>1868</StateNumber>
+      <Owner>ksenia</Owner>
+      <IntrospectionStateNumber>1903</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|24771|24773|1
+sequence|table|24782|24784|1
+sequence|table|24793|24795|1
+sequence|table|24804|24806|1
+</Relations>
+    </database>
+    <database id="7" parent="1" name="graphql_app_production">
+      <ObjectId>24754</ObjectId>
+      <StateNumber>1875</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="8" parent="1" name="graphql_app_test">
+      <ObjectId>24753</ObjectId>
+      <StateNumber>1871</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="9" parent="1" name="ksenia">
+      <ObjectId>24576</ObjectId>
+      <StateNumber>978</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="10" parent="1" name="postgres">
+      <ObjectId>12641</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>936</StateNumber>
+      <Owner>ksenia</Owner>
+    </database>
+    <database id="11" parent="1" name="sinatra_seq_dev">
+      <ObjectId>16385</ObjectId>
+      <StateNumber>949</StateNumber>
+      <Owner>sinatra_admin</Owner>
+    </database>
+    <database id="12" parent="1" name="sinatra_seq_prod">
+      <ObjectId>16387</ObjectId>
+      <StateNumber>953</StateNumber>
+      <Owner>sinatra_admin</Owner>
+    </database>
+    <database id="13" parent="1" name="sinatra_seq_test">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>952</StateNumber>
+      <Owner>sinatra_admin</Owner>
+    </database>
+    <role id="14" parent="1" name="ksenia">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="15" parent="1" name="sinatra_admin">
+      <ObjectId>16384</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="16" parent="6" name="information_schema">
+      <ObjectId>12349</ObjectId>
+      <StateNumber>886</StateNumber>
+      <Owner>ksenia</Owner>
+    </schema>
+    <schema id="17" parent="6" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>883</StateNumber>
+      <Owner>ksenia</Owner>
+    </schema>
+    <schema id="18" parent="6" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+      <StateNumber>22</StateNumber>
+      <Owner>ksenia</Owner>
+    </schema>
+    <schema id="19" parent="6" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>ksenia</Owner>
+    </schema>
+    <schema id="20" parent="6" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+      <StateNumber>22</StateNumber>
+      <Owner>ksenia</Owner>
+    </schema>
+    <schema id="21" parent="6" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>884</StateNumber>
+      <Owner>ksenia</Owner>
+      <IntrospectionStateNumber>1904</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="22" parent="6" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <access-method id="23" parent="6" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <access-method id="24" parent="6" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <access-method id="25" parent="6" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <access-method id="26" parent="6" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <access-method id="27" parent="6" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+    </access-method>
+    <extension id="28" parent="6" name="plpgsql">
+      <ObjectId>12623</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>889</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="29" parent="21" name="applies_id_seq">
+      <ObjectId>24804</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1901</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="30" parent="21" name="companies_id_seq">
+      <ObjectId>24793</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1900</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="31" parent="21" name="geeks_id_seq">
+      <ObjectId>24782</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1899</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="32" parent="21" name="jobs_id_seq">
+      <ObjectId>24771</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1898</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="33" parent="21" name="applies">
+      <ObjectId>24806</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1901</StateNumber>
+    </table>
+    <table id="34" parent="21" name="ar_internal_metadata">
+      <ObjectId>24763</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1883</StateNumber>
+    </table>
+    <table id="35" parent="21" name="companies">
+      <ObjectId>24795</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1902</StateNumber>
+    </table>
+    <table id="36" parent="21" name="geeks">
+      <ObjectId>24784</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1899</StateNumber>
+    </table>
+    <table id="37" parent="21" name="jobs">
+      <ObjectId>24773</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1898</StateNumber>
+    </table>
+    <table id="38" parent="21" name="schema_migrations">
+      <ObjectId>24755</ObjectId>
+      <Owner>ksenia</Owner>
+      <StateNumber>1882</StateNumber>
+    </table>
+    <column id="39" parent="33" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1901</StateNumber>
+      <DefaultExpression>nextval(&apos;applies_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="40" parent="33" name="job_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1901</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="33" name="geek_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1901</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="42" parent="33" name="read">
+      <Position>4</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>1901</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="43" parent="33" name="invited">
+      <Position>5</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>1901</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="44" parent="33" name="created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1901</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="45" parent="33" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1901</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="46" parent="33" name="applies_pkey">
+      <ObjectId>24810</ObjectId>
+      <StateNumber>1901</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="33" name="applies_pkey">
+      <ObjectId>24811</ObjectId>
+      <StateNumber>1901</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>applies_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="34" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1883</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="34" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1883</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="34" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1883</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="51" parent="34" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1883</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="52" parent="34" name="ar_internal_metadata_pkey">
+      <ObjectId>24769</ObjectId>
+      <StateNumber>1883</StateNumber>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="34" name="ar_internal_metadata_pkey">
+      <ObjectId>24770</ObjectId>
+      <StateNumber>1883</StateNumber>
+      <ColNames>key</ColNames>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1900</StateNumber>
+      <DefaultExpression>nextval(&apos;companies_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="55" parent="35" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1900</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="35" name="location">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1900</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="35" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1900</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="58" parent="35" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1900</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="59" parent="35" name="deleted">
+      <Position>6</Position>
+      <DataType>boolean|0s</DataType>
+      <StateNumber>1902</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="60" parent="35" name="companies_pkey">
+      <ObjectId>24802</ObjectId>
+      <StateNumber>1902</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="35" name="companies_pkey">
+      <ObjectId>24803</ObjectId>
+      <StateNumber>1900</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>companies_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1899</StateNumber>
+      <DefaultExpression>nextval(&apos;geeks_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="63" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1899</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="64" parent="36" name="stack">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1899</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="65" parent="36" name="resume">
+      <Position>4</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>1899</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="66" parent="36" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1899</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="67" parent="36" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1899</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="68" parent="36" name="geeks_pkey">
+      <ObjectId>24791</ObjectId>
+      <StateNumber>1899</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="69" parent="36" name="geeks_pkey">
+      <ObjectId>24792</ObjectId>
+      <StateNumber>1899</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>geeks_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="70" parent="37" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1898</StateNumber>
+      <DefaultExpression>nextval(&apos;jobs_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="71" parent="37" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1898</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="72" parent="37" name="place">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>1898</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="37" name="company_id">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1898</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="74" parent="37" name="created_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1898</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="75" parent="37" name="updated_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1898</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="76" parent="37" name="jobs_pkey">
+      <ObjectId>24780</ObjectId>
+      <StateNumber>1898</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="77" parent="37" name="jobs_pkey">
+      <ObjectId>24781</ObjectId>
+      <StateNumber>1898</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>jobs_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="78" parent="38" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1882</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="79" parent="38" name="schema_migrations_pkey">
+      <ObjectId>24761</ObjectId>
+      <StateNumber>1882</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="80" parent="38" name="schema_migrations_pkey">
+      <ObjectId>24762</ObjectId>
+      <StateNumber>1882</StateNumber>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

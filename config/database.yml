@@ -1,0 +1,28 @@
+
+default: &default
+  host: localhost
+  port: 5432
+  adapter: postgresql
+  encoding: UTF8
+  username: ksenia
+  timeout: 5000
+  reaping_frequency: 30
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: graphql_app_development
+  password: <%= Rails.application.secrets[:database][:password] %>
+
+test:
+  <<: *default
+  database: graphql_app_test
+  password: <%= Rails.application.secrets[:database][:password] %>
+
+
+production:
+  <<: *default
+  database: graphql_app_production
+  password: <%= ENV['EXERCISE_DATABASE_PASSWORD'] %>
